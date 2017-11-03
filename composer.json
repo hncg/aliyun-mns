@@ -1,0 +1,21 @@
+{
+  "name": "hncg/AliyunMNS",
+  "description": "AliyunMNS sdk",
+  "require": {
+    "guzzlehttp/guzzle": "6.3",
+    "php": ">=5.6.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "hncg",
+      "email": "574878649@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "AliyunMNS\\": "src/"
+    }
+  }
+}
