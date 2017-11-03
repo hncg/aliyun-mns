@@ -108,6 +108,11 @@ class HttpClient
         return new MnsPromise($promise, $response);
     }
 
+    /**
+     * @param \AliyunMNS\Requests\BaseRequest $request
+     * @param \AliyunMNS\Responses\BaseResponse $response
+     * @return \AliyunMNS\Responses\BaseResponse
+     */
     public function sendRequest(BaseRequest $request, BaseResponse &$response)
     {
         $promise = $this->sendRequestAsync($request, $response);

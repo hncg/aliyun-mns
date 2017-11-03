@@ -80,6 +80,10 @@ class Topic
         return "sms:directsms:anonymous";
     }
 
+    /**
+     * @param \AliyunMNS\Requests\PublishMessageRequest $request
+     * @return \AliyunMNS\Responses\BaseResponse
+     */
     public function publishMessage(PublishMessageRequest $request)
     {
         $request->setTopicName($this->topicName);
